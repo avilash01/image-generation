@@ -31,9 +31,6 @@ app.post('/api/generate-image', async (req, res) => {
       response_format: "url", 
     });
 
-    const imageUrl = response.data[0].url; 
-    console.log("Backend: Image URL generated:", imageUrl);
-
     res.status(200).json({ success: true, imageUrl });
 
   } catch (error) {
@@ -47,7 +44,7 @@ app.post('/api/generate-image', async (req, res) => {
         code: error.response.status
       });
     } else if (error.request) {
-      res.status(500).json({ success: false, message: 'No response from OpenAI API. Please check network connection.' });
+      res.status(500).json({ success: false, message: 'No response from OpenAI API.' });
     } 
     else {
       res.status(500).json({ success: false, message: error.message || 'Internal server error during image generation.' });
@@ -57,5 +54,5 @@ app.post('/api/generate-image', async (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`Backend server running on http://localhost:${PORT}`);
-  console.log('Ensure OPENAI_API_KEY environment variable is set in backend/.env file.');
+  console.log('environment variable is set in backend/.env file.');
 });
