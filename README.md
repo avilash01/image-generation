@@ -1,5 +1,5 @@
 
-DALL-E Image Generation App
+Image Generation App
 A powerful and intuitive web application that allows users to generate stunning images from text prompts using the cutting-edge DALL-E API by OpenAI. Built with a robust Node.js backend and a sleek, responsive frontend styled with Tailwind CSS.
 
 Features
@@ -20,7 +20,7 @@ Node.js: A JavaScript runtime for building scalable and efficient server-side ap
 Express.js: (Commonly used with Node.js) A minimalist web framework that provides robust features for building APIs and managing routes.
 
 API
-OpenAI DALL-E API: Provides the core text-to-image generation capabilities.
+GEMINI API: Provides the core text-to-image generation capabilities.
 
 Environment Management
 dotenv: Used for securely managing environment variables (like your API keys), keeping sensitive information out of your codebase.
