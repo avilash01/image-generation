@@ -1,49 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Image Generator</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    .container {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    input {
-      padding: 10px;
-      font-size: 16px;
-      width: 100%;
-    }
-    button {
-      padding: 10px 20px;
-      font-size: 16px;
-      background-color: #1976d2;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #1565c0;
-    }
-    img {
-      max-width: 100%;
-      max-height: 400px;
-      object-fit: contain;
-    }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <div class="container">
-    <h1>Image Generator</h1>
-    <input type="text" id="prompt" placeholder="Enter your prompt..." />
-    <button onclick="generateImage()">Generate Image</button>
-    <div id="image-container"></div>
+<body class="bg-gray-50 min-h-screen">
+  <div class="container mx-auto px-4 py-8 max-w-4xl">
+    <div class="bg-white rounded-lg shadow-lg p-6">
+      <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">Image Generator</h1>
+      <div class="space-y-6">
+        <input 
+          type="text" 
+          id="prompt" 
+          placeholder="Enter your prompt..." 
+          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <button 
+          onclick="generateImage()" 
+          class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+        >
+          Generate Image
+        </button>
+        <div id="image-container" class="mt-6">
+          <!-- Image will be inserted here -->
+        </div>
+      </div>
+    </div>
   </div>
   <script>
     async function generateImage() {
@@ -65,7 +49,13 @@
         const data = await response.json();
         if (data.imageUrl) {
           document.getElementById('image-container').innerHTML = `
-            <img src="${data.imageUrl}" alt="Generated image" />
+            <div class="relative w-full h-96">
+              <img 
+                src="${data.imageUrl}" 
+                alt="Generated image" 
+                class="w-full h-full object-contain rounded-lg"
+              />
+            </div>
           `;
         } else {
           alert(data.error || 'Failed to generate image');
