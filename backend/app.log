@@ -1,0 +1,334 @@
+2025-10-04 15:09:34,518 - INFO - Replicate API token loaded: r8_Rs5JN8M...
+2025-10-04 15:09:34,519 - INFO - HuggingFace API token loaded: hf_OiQpvpT...
+2025-10-04 15:09:34,596 - INFO - AI Image Generator v2.0 Starting...
+2025-10-04 15:09:34,598 - INFO - Multiple APIs with smart fallback configured
+2025-10-04 15:09:34,600 - INFO - Replicate: OK
+2025-10-04 15:09:34,605 - INFO - HuggingFace: OK
+2025-10-04 15:09:34,607 - INFO - Local fallback: OK
+2025-10-04 15:09:34,608 - INFO - Server: http://0.0.0.0:8000
+2025-10-04 15:09:34,608 - INFO - Test endpoint: http://localhost:8000/test-all
+2025-10-04 15:19:17,631 - INFO - Replicate API token loaded: r8_Rs5JN8M...
+2025-10-04 15:19:17,631 - INFO - HuggingFace API token loaded: hf_OiQpvpT...
+2025-10-04 15:19:17,675 - INFO - AI Image Generator v2.0 Starting...
+2025-10-04 15:19:17,677 - INFO - Multiple APIs with smart fallback configured
+2025-10-04 15:19:17,677 - INFO - Replicate: OK
+2025-10-04 15:19:17,677 - INFO - HuggingFace: OK
+2025-10-04 15:19:17,678 - INFO - Local fallback: OK
+2025-10-04 15:19:17,678 - INFO - Server: http://0.0.0.0:8000
+2025-10-04 15:19:17,678 - INFO - Test endpoint: http://localhost:8000/test-all
+2025-10-04 15:19:23,392 - INFO - Trying Replicate model: flux-schnell
+2025-10-04 15:19:23,396 - WARNING - Replicate flux-schnell failed: _create_prediction_body() got an unexpected keyword argument 'timeout'
+2025-10-04 15:19:23,396 - INFO - Trying HuggingFace model: stable-diffusion-2.1
+2025-10-04 15:19:24,100 - WARNING - HuggingFace stable-diffusion-2.1 HTTP 404: Not Found
+2025-10-04 15:20:03,995 - INFO - Trying Replicate model: flux-schnell
+2025-10-04 15:20:03,996 - WARNING - Replicate flux-schnell failed: _create_prediction_body() got an unexpected keyword argument 'timeout'
+2025-10-04 15:20:03,996 - INFO - Trying HuggingFace model: stable-diffusion-2.1
+2025-10-04 15:20:04,537 - WARNING - HuggingFace stable-diffusion-2.1 HTTP 404: Not Found
+2025-10-04 15:20:04,582 - INFO - Generation request: A majestic dragon soaring over a medieval castle...
+2025-10-04 15:20:04,588 - INFO - Trying Replicate model: flux-schnell
+2025-10-04 15:20:04,605 - INFO - Trying Replicate model: flux-dev
+2025-10-04 15:20:04,607 - INFO - Trying Replicate model: sdxl-lightning
+2025-10-04 15:20:04,621 - WARNING - Replicate flux-schnell failed: _create_prediction_body() got an unexpected keyword argument 'timeout'
+2025-10-04 15:20:04,625 - WARNING - Replicate flux-dev failed: _create_prediction_body() got an unexpected keyword argument 'timeout'
+2025-10-04 15:20:04,627 - WARNING - Replicate sdxl-lightning failed: _create_prediction_body() got an unexpected keyword argument 'timeout'
+2025-10-04 15:20:04,634 - INFO - Trying HuggingFace model: stable-diffusion-2.1
+2025-10-04 15:20:04,645 - INFO - Trying HuggingFace model: sd-xl
+2025-10-04 15:20:05,111 - WARNING - HuggingFace stable-diffusion-2.1 HTTP 404: Not Found
+2025-10-04 15:20:16,019 - INFO - HuggingFace sd-xl succeeded
+2025-10-04 15:20:16,023 - INFO - Generation succeeded in 11.4s with huggingface/sd-xl
+2025-10-04 15:20:28,839 - INFO - Trying Replicate model: flux-schnell
+2025-10-04 15:20:28,840 - WARNING - Replicate flux-schnell failed: _create_prediction_body() got an unexpected keyword argument 'timeout'
+2025-10-04 15:20:28,840 - INFO - Trying HuggingFace model: stable-diffusion-2.1
+2025-10-04 15:20:30,362 - WARNING - HuggingFace stable-diffusion-2.1 HTTP 404: Not Found
+2025-10-04 15:20:30,369 - INFO - Generation request: cat...
+2025-10-04 15:20:30,370 - INFO - Trying Replicate model: flux-schnell
+2025-10-04 15:20:30,374 - INFO - Trying Replicate model: flux-dev
+2025-10-04 15:20:30,377 - INFO - Trying Replicate model: sdxl-lightning
+2025-10-04 15:20:30,381 - WARNING - Replicate flux-schnell failed: _create_prediction_body() got an unexpected keyword argument 'timeout'
+2025-10-04 15:20:30,383 - WARNING - Replicate flux-dev failed: _create_prediction_body() got an unexpected keyword argument 'timeout'
+2025-10-04 15:20:30,388 - WARNING - Replicate sdxl-lightning failed: _create_prediction_body() got an unexpected keyword argument 'timeout'
+2025-10-04 15:20:30,389 - INFO - Trying HuggingFace model: stable-diffusion-2.1
+2025-10-04 15:20:30,394 - INFO - Trying HuggingFace model: sd-xl
+2025-10-04 15:20:30,851 - WARNING - HuggingFace stable-diffusion-2.1 HTTP 404: Not Found
+2025-10-04 15:20:41,698 - INFO - HuggingFace sd-xl succeeded
+2025-10-04 15:20:41,698 - INFO - Generation succeeded in 11.3s with huggingface/sd-xl
+2025-10-04 15:21:22,421 - INFO - Trying Replicate model: flux-schnell
+2025-10-04 15:21:22,423 - WARNING - Replicate flux-schnell failed: _create_prediction_body() got an unexpected keyword argument 'timeout'
+2025-10-04 15:21:22,424 - INFO - Trying HuggingFace model: stable-diffusion-2.1
+2025-10-04 15:21:22,857 - WARNING - HuggingFace stable-diffusion-2.1 HTTP 404: Not Found
+2025-10-04 15:22:31,646 - INFO - Trying Replicate model: flux-schnell
+2025-10-04 15:22:31,648 - WARNING - Replicate flux-schnell failed: _create_prediction_body() got an unexpected keyword argument 'timeout'
+2025-10-04 15:22:31,648 - INFO - Trying HuggingFace model: stable-diffusion-2.1
+2025-10-04 15:22:32,649 - WARNING - HuggingFace stable-diffusion-2.1 HTTP 404: Not Found
+2025-10-04 15:22:32,658 - INFO - Generation request: krishna with cows using flute...
+2025-10-04 15:22:32,660 - INFO - Trying Replicate model: flux-schnell
+2025-10-04 15:22:32,663 - INFO - Trying Replicate model: flux-dev
+2025-10-04 15:22:32,668 - INFO - Trying Replicate model: sdxl-lightning
+2025-10-04 15:22:32,673 - WARNING - Replicate flux-schnell failed: _create_prediction_body() got an unexpected keyword argument 'timeout'
+2025-10-04 15:22:32,676 - WARNING - Replicate flux-dev failed: _create_prediction_body() got an unexpected keyword argument 'timeout'
+2025-10-04 15:22:32,686 - WARNING - Replicate sdxl-lightning failed: _create_prediction_body() got an unexpected keyword argument 'timeout'
+2025-10-04 15:22:32,687 - INFO - Trying HuggingFace model: stable-diffusion-2.1
+2025-10-04 15:22:32,690 - INFO - Trying HuggingFace model: sd-xl
+2025-10-04 15:22:33,145 - WARNING - HuggingFace stable-diffusion-2.1 HTTP 404: Not Found
+2025-10-04 15:22:44,086 - INFO - HuggingFace sd-xl succeeded
+2025-10-04 15:22:44,088 - INFO - Generation succeeded in 11.4s with huggingface/sd-xl
+2025-10-04 15:45:19,008 - INFO - Trying Replicate model: flux-schnell
+2025-10-04 15:45:19,009 - WARNING - Replicate flux-schnell failed: _create_prediction_body() got an unexpected keyword argument 'timeout'
+2025-10-04 15:45:19,010 - INFO - Trying HuggingFace model: stable-diffusion-2.1
+2025-10-04 15:45:19,832 - WARNING - HuggingFace stable-diffusion-2.1 HTTP 404: Not Found
+2025-10-04 15:45:19,838 - INFO - Generation request: A cozy cabin in a snowy forest, warm lights in the...
+2025-10-04 15:45:19,839 - INFO - Trying Replicate model: flux-schnell
+2025-10-04 15:45:19,839 - INFO - Trying Replicate model: flux-dev
+2025-10-04 15:45:19,841 - INFO - Trying Replicate model: sdxl-lightning
+2025-10-04 15:45:19,841 - WARNING - Replicate flux-schnell failed: _create_prediction_body() got an unexpected keyword argument 'timeout'
+2025-10-04 15:45:19,842 - WARNING - Replicate flux-dev failed: _create_prediction_body() got an unexpected keyword argument 'timeout'
+2025-10-04 15:45:19,842 - WARNING - Replicate sdxl-lightning failed: _create_prediction_body() got an unexpected keyword argument 'timeout'
+2025-10-04 15:45:19,843 - INFO - Trying HuggingFace model: stable-diffusion-2.1
+2025-10-04 15:45:19,843 - INFO - Trying HuggingFace model: sd-xl
+2025-10-04 15:45:20,257 - WARNING - HuggingFace stable-diffusion-2.1 HTTP 404: Not Found
+2025-10-04 15:45:31,246 - INFO - HuggingFace sd-xl succeeded
+2025-10-04 15:45:31,247 - INFO - Generation succeeded in 11.4s with huggingface/sd-xl
+2025-10-04 15:46:07,709 - INFO - Replicate API token loaded: r8_Rs5JN8M...
+2025-10-04 15:46:07,709 - INFO - HuggingFace API token loaded: hf_OiQpvpT...
+2025-10-04 15:46:07,759 - INFO - AI Image Generator v2.0 Starting...
+2025-10-04 15:46:07,761 - INFO - Multiple APIs with smart fallback configured
+2025-10-04 15:46:07,761 - INFO - Replicate: OK
+2025-10-04 15:46:07,761 - INFO - HuggingFace: OK
+2025-10-04 15:46:07,761 - INFO - Local fallback: OK
+2025-10-04 15:46:07,761 - INFO - Server: http://0.0.0.0:8000
+2025-10-04 15:46:07,761 - INFO - Test endpoint: http://localhost:8000/test-all
+2025-10-04 15:46:18,022 - INFO - === Starting comprehensive API test ===
+2025-10-04 15:46:18,023 - INFO - Testing Replicate API connectivity...
+2025-10-04 15:46:19,953 - INFO - HTTP Request: GET https://api.replicate.com/v1/models "HTTP/1.1 200 OK"
+2025-10-04 15:46:20,160 - INFO - Replicate API: OK - Found 25 models
+2025-10-04 15:46:20,161 - INFO - Testing HuggingFace API connectivity...
+2025-10-04 15:46:21,086 - ERROR - HuggingFace API failed: HTTP 401
+2025-10-04 15:46:21,086 - INFO - Testing Replicate model: flux-schnell
+2025-10-04 15:46:21,089 - ERROR - Replicate flux-schnell: ERROR - _create_prediction_body() got an unexpected keyword argument 'timeout'
+2025-10-04 15:46:21,089 - INFO - Testing Replicate model: flux-dev
+2025-10-04 15:46:21,091 - ERROR - Replicate flux-dev: ERROR - _create_prediction_body() got an unexpected keyword argument 'timeout'
+2025-10-04 15:46:21,091 - INFO - === API test completed ===
+2025-10-04 15:48:18,336 - INFO - === Starting comprehensive API test ===
+2025-10-04 15:48:18,337 - INFO - Testing Replicate API connectivity...
+2025-10-04 15:48:19,863 - INFO - HTTP Request: GET https://api.replicate.com/v1/models "HTTP/1.1 200 OK"
+2025-10-04 15:48:20,094 - INFO - Replicate API: OK - Found 25 models
+2025-10-04 15:48:20,095 - INFO - Testing HuggingFace API connectivity...
+2025-10-04 15:48:21,167 - ERROR - HuggingFace API failed: HTTP 401
+2025-10-04 15:48:21,168 - INFO - Testing Replicate model: flux-schnell
+2025-10-04 15:48:21,169 - ERROR - Replicate flux-schnell: ERROR - _create_prediction_body() got an unexpected keyword argument 'timeout'
+2025-10-04 15:48:21,170 - INFO - Testing Replicate model: flux-dev
+2025-10-04 15:48:21,171 - ERROR - Replicate flux-dev: ERROR - _create_prediction_body() got an unexpected keyword argument 'timeout'
+2025-10-04 15:48:21,171 - INFO - === API test completed ===
+2025-10-04 15:48:21,177 - INFO - Generation request: A serene landscape with mountains and a lake at su...
+2025-10-04 15:48:21,178 - INFO - Trying Replicate model: flux-schnell
+2025-10-04 15:48:21,178 - INFO - Trying Replicate model: flux-dev
+2025-10-04 15:48:21,179 - INFO - Trying Replicate model: sdxl-lightning
+2025-10-04 15:48:21,180 - WARNING - Replicate flux-schnell failed: _create_prediction_body() got an unexpected keyword argument 'timeout'
+2025-10-04 15:48:21,180 - WARNING - Replicate flux-dev failed: _create_prediction_body() got an unexpected keyword argument 'timeout'
+2025-10-04 15:48:21,181 - WARNING - Replicate sdxl-lightning failed: _create_prediction_body() got an unexpected keyword argument 'timeout'
+2025-10-04 15:48:21,181 - INFO - Trying HuggingFace model: stable-diffusion-2.1
+2025-10-04 15:48:21,240 - INFO - Trying HuggingFace model: sd-xl
+2025-10-04 15:48:21,761 - WARNING - HuggingFace stable-diffusion-2.1 HTTP 404: Not Found
+2025-10-04 15:48:32,526 - INFO - HuggingFace sd-xl succeeded
+2025-10-04 15:48:32,527 - INFO - Generation succeeded in 11.4s with huggingface/sd-xl
+2025-10-04 15:53:19,627 - INFO - Replicate API token loaded: r8_Rs5JN8M...
+2025-10-04 15:53:19,627 - INFO - HuggingFace API token loaded: hf_OiQpvpT...
+2025-10-04 15:53:19,661 - INFO - AI Image Generator v2.0 Starting...
+2025-10-04 15:53:19,662 - INFO - Multiple APIs with smart fallback configured
+2025-10-04 15:53:19,662 - INFO - Replicate: OK
+2025-10-04 15:53:19,663 - INFO - HuggingFace: OK
+2025-10-04 15:53:19,663 - INFO - Local fallback: OK
+2025-10-04 15:53:19,663 - INFO - Server: http://0.0.0.0:8000
+2025-10-04 15:53:19,663 - INFO - Test endpoint: http://localhost:8000/test-all
+2025-10-04 15:53:21,780 - INFO - === Starting comprehensive API test ===
+2025-10-04 15:53:21,781 - INFO - Testing Replicate API connectivity...
+2025-10-04 15:53:23,718 - INFO - HTTP Request: GET https://api.replicate.com/v1/models "HTTP/1.1 200 OK"
+2025-10-04 15:53:23,733 - INFO - Replicate API: OK - Found 25 models
+2025-10-04 15:53:23,734 - INFO - Testing HuggingFace API connectivity...
+2025-10-04 15:53:25,181 - ERROR - HuggingFace API failed: HTTP 401
+2025-10-04 15:53:25,182 - INFO - Testing Replicate model: flux-schnell
+2025-10-04 15:53:26,673 - INFO - HTTP Request: POST https://api.replicate.com/v1/models/black-forest-labs/flux-schnell/predictions "HTTP/1.1 402 Payment Required"
+2025-10-04 15:53:26,675 - ERROR - Replicate flux-schnell: ERROR - ReplicateError Details:
+title: Insufficient credit
+status: 402
+detail: You have insufficient credit to run this model. Go to https://replicate.com/account/billing#billing to purchase credit. Once you purchase credit, please wait a few minutes before trying again.
+2025-10-04 15:53:26,675 - INFO - Testing Replicate model: flux-dev
+2025-10-04 15:53:28,453 - INFO - HTTP Request: POST https://api.replicate.com/v1/models/black-forest-labs/flux-dev/predictions "HTTP/1.1 429 Too Many Requests"
+2025-10-04 15:53:28,454 - ERROR - Replicate flux-dev: ERROR - ReplicateError Details:
+status: 429
+detail: Request was throttled. Your rate limit for creating predictions is reduced to 6 requests per minute with a burst of 1 requests until you add a payment method. Your rate limit resets in ~9s.
+2025-10-04 15:53:28,455 - INFO - === API test completed ===
+2025-10-04 15:54:19,067 - INFO - === Starting comprehensive API test ===
+2025-10-04 15:54:19,067 - INFO - Testing Replicate API connectivity...
+2025-10-04 15:54:20,539 - INFO - HTTP Request: GET https://api.replicate.com/v1/models "HTTP/1.1 200 OK"
+2025-10-04 15:54:20,559 - INFO - Replicate API: OK - Found 25 models
+2025-10-04 15:54:20,560 - INFO - Testing HuggingFace API connectivity...
+2025-10-04 15:54:21,493 - ERROR - HuggingFace API failed: HTTP 401
+2025-10-04 15:54:21,493 - INFO - Testing Replicate model: flux-schnell
+2025-10-04 15:54:22,531 - INFO - HTTP Request: POST https://api.replicate.com/v1/models/black-forest-labs/flux-schnell/predictions "HTTP/1.1 402 Payment Required"
+2025-10-04 15:54:22,532 - ERROR - Replicate flux-schnell: ERROR - ReplicateError Details:
+title: Insufficient credit
+status: 402
+detail: You have insufficient credit to run this model. Go to https://replicate.com/account/billing#billing to purchase credit. Once you purchase credit, please wait a few minutes before trying again.
+2025-10-04 15:54:22,532 - INFO - Testing Replicate model: flux-dev
+2025-10-04 15:54:23,646 - INFO - HTTP Request: POST https://api.replicate.com/v1/models/black-forest-labs/flux-dev/predictions "HTTP/1.1 429 Too Many Requests"
+2025-10-04 15:54:23,649 - ERROR - Replicate flux-dev: ERROR - ReplicateError Details:
+status: 429
+detail: Request was throttled. Your rate limit for creating predictions is reduced to 6 requests per minute with a burst of 1 requests until you add a payment method. Your rate limit resets in ~9s.
+2025-10-04 15:54:23,650 - INFO - === API test completed ===
+2025-10-04 15:54:23,662 - INFO - Generation request: A futuristic spaceship landing on an alien planet...
+2025-10-04 15:54:23,665 - INFO - Trying Replicate model: flux-schnell
+2025-10-04 15:54:23,665 - INFO - Trying Replicate model: flux-dev
+2025-10-04 15:54:23,668 - INFO - Trying Replicate model: sdxl-lightning
+2025-10-04 15:54:24,826 - INFO - HTTP Request: POST https://api.replicate.com/v1/models/black-forest-labs/flux-dev/predictions "HTTP/1.1 429 Too Many Requests"
+2025-10-04 15:54:24,829 - WARNING - Replicate flux-dev failed: ReplicateError Details:
+status: 429
+detail: Request was throttled. Your rate limit for creating predictions is reduced to 6 requests per minute with a burst of 1 requests until you add a payment method. Your rate limit resets in ~8s.
+2025-10-04 15:54:24,853 - INFO - HTTP Request: POST https://api.replicate.com/v1/models/bytedance/sdxl-lightning-4step/predictions "HTTP/1.1 429 Too Many Requests"
+2025-10-04 15:54:24,854 - WARNING - Replicate sdxl-lightning failed: ReplicateError Details:
+status: 429
+detail: Request was throttled. Your rate limit for creating predictions is reduced to 6 requests per minute with a burst of 1 requests until you add a payment method. Your rate limit resets in ~8s.
+2025-10-04 15:54:24,878 - INFO - HTTP Request: POST https://api.replicate.com/v1/models/black-forest-labs/flux-schnell/predictions "HTTP/1.1 429 Too Many Requests"
+2025-10-04 15:54:24,879 - WARNING - Replicate flux-schnell failed: ReplicateError Details:
+status: 429
+detail: Request was throttled. Your rate limit for creating predictions is reduced to 6 requests per minute with a burst of 1 requests until you add a payment method. Your rate limit resets in ~8s.
+2025-10-04 15:54:24,880 - INFO - Trying HuggingFace model: stable-diffusion-2.1
+2025-10-04 15:54:24,938 - INFO - Trying HuggingFace model: sd-xl
+2025-10-04 15:54:26,030 - WARNING - HuggingFace stable-diffusion-2.1 HTTP 404: Not Found
+2025-10-04 15:54:37,255 - INFO - HuggingFace sd-xl succeeded
+2025-10-04 15:54:37,256 - INFO - Generation succeeded in 13.6s with huggingface/sd-xl
+2025-10-04 15:58:01,873 - INFO - === Starting comprehensive API test ===
+2025-10-04 15:58:01,874 - INFO - Testing Replicate API connectivity...
+2025-10-04 15:58:03,462 - INFO - HTTP Request: GET https://api.replicate.com/v1/models "HTTP/1.1 200 OK"
+2025-10-04 15:58:03,685 - INFO - Replicate API: OK - Found 25 models
+2025-10-04 15:58:03,687 - INFO - Testing HuggingFace API connectivity...
+2025-10-04 15:58:05,602 - ERROR - HuggingFace API failed: HTTP 401
+2025-10-04 15:58:05,603 - INFO - Testing Replicate model: flux-schnell
+2025-10-04 15:58:06,633 - INFO - HTTP Request: POST https://api.replicate.com/v1/models/black-forest-labs/flux-schnell/predictions "HTTP/1.1 402 Payment Required"
+2025-10-04 15:58:06,635 - ERROR - Replicate flux-schnell: ERROR - ReplicateError Details:
+title: Insufficient credit
+status: 402
+detail: You have insufficient credit to run this model. Go to https://replicate.com/account/billing#billing to purchase credit. Once you purchase credit, please wait a few minutes before trying again.
+2025-10-04 15:58:06,636 - INFO - Testing Replicate model: flux-dev
+2025-10-04 15:58:07,575 - INFO - HTTP Request: POST https://api.replicate.com/v1/models/black-forest-labs/flux-dev/predictions "HTTP/1.1 429 Too Many Requests"
+2025-10-04 15:58:07,580 - ERROR - Replicate flux-dev: ERROR - ReplicateError Details:
+status: 429
+detail: Request was throttled. Your rate limit for creating predictions is reduced to 6 requests per minute with a burst of 1 requests until you add a payment method. Your rate limit resets in ~10s.
+2025-10-04 15:58:07,581 - INFO - === API test completed ===
+2025-10-04 15:58:07,591 - INFO - Generation request: A samurai warrior in a cherry blossom forest...
+2025-10-04 15:58:07,596 - INFO - Trying Replicate model: flux-schnell
+2025-10-04 15:58:07,597 - INFO - Trying Replicate model: flux-dev
+2025-10-04 15:58:07,598 - INFO - Trying Replicate model: sdxl-lightning
+2025-10-04 15:58:08,788 - INFO - HTTP Request: POST https://api.replicate.com/v1/models/black-forest-labs/flux-schnell/predictions "HTTP/1.1 429 Too Many Requests"
+2025-10-04 15:58:08,794 - INFO - HTTP Request: POST https://api.replicate.com/v1/models/bytedance/sdxl-lightning-4step/predictions "HTTP/1.1 429 Too Many Requests"
+2025-10-04 15:58:08,794 - WARNING - Replicate flux-schnell failed: ReplicateError Details:
+status: 429
+detail: Request was throttled. Your rate limit for creating predictions is reduced to 6 requests per minute with a burst of 1 requests until you add a payment method. Your rate limit resets in ~8s.
+2025-10-04 15:58:08,795 - WARNING - Replicate sdxl-lightning failed: ReplicateError Details:
+status: 429
+detail: Request was throttled. Your rate limit for creating predictions is reduced to 6 requests per minute with a burst of 1 requests until you add a payment method. Your rate limit resets in ~8s.
+2025-10-04 15:58:09,005 - INFO - HTTP Request: POST https://api.replicate.com/v1/models/black-forest-labs/flux-dev/predictions "HTTP/1.1 429 Too Many Requests"
+2025-10-04 15:58:09,007 - WARNING - Replicate flux-dev failed: ReplicateError Details:
+status: 429
+detail: Request was throttled. Your rate limit for creating predictions is reduced to 6 requests per minute with a burst of 1 requests until you add a payment method. Your rate limit resets in ~8s.
+2025-10-04 15:58:09,007 - INFO - Trying HuggingFace model: stable-diffusion-2.1
+2025-10-04 15:58:09,008 - INFO - Trying HuggingFace model: sd-xl
+2025-10-04 15:58:09,517 - WARNING - HuggingFace stable-diffusion-2.1 HTTP 404: Not Found
+2025-10-04 15:58:20,493 - INFO - HuggingFace sd-xl succeeded
+2025-10-04 15:58:20,495 - INFO - Generation succeeded in 12.9s with huggingface/sd-xl
+2025-10-04 15:59:07,510 - INFO - === Starting comprehensive API test ===
+2025-10-04 15:59:07,510 - INFO - Testing Replicate API connectivity...
+2025-10-04 15:59:09,904 - INFO - HTTP Request: GET https://api.replicate.com/v1/models "HTTP/1.1 200 OK"
+2025-10-04 15:59:10,138 - INFO - Replicate API: OK - Found 25 models
+2025-10-04 15:59:10,139 - INFO - Testing HuggingFace API connectivity...
+2025-10-04 15:59:11,290 - ERROR - HuggingFace API failed: HTTP 401
+2025-10-04 15:59:11,290 - INFO - Testing Replicate model: flux-schnell
+2025-10-04 15:59:12,616 - INFO - HTTP Request: POST https://api.replicate.com/v1/models/black-forest-labs/flux-schnell/predictions "HTTP/1.1 402 Payment Required"
+2025-10-04 15:59:12,619 - ERROR - Replicate flux-schnell: ERROR - ReplicateError Details:
+title: Insufficient credit
+status: 402
+detail: You have insufficient credit to run this model. Go to https://replicate.com/account/billing#billing to purchase credit. Once you purchase credit, please wait a few minutes before trying again.
+2025-10-04 15:59:12,619 - INFO - Testing Replicate model: flux-dev
+2025-10-04 15:59:13,715 - INFO - HTTP Request: POST https://api.replicate.com/v1/models/black-forest-labs/flux-dev/predictions "HTTP/1.1 429 Too Many Requests"
+2025-10-04 15:59:13,717 - ERROR - Replicate flux-dev: ERROR - ReplicateError Details:
+status: 429
+detail: Request was throttled. Your rate limit for creating predictions is reduced to 6 requests per minute with a burst of 1 requests until you add a payment method. Your rate limit resets in ~9s.
+2025-10-04 15:59:13,718 - INFO - === API test completed ===
+2025-10-04 15:59:13,723 - INFO - Generation request: A cute cat wearing a wizard hat, digital art...
+2025-10-04 15:59:13,723 - INFO - Trying Replicate model: flux-schnell
+2025-10-04 15:59:13,724 - INFO - Trying Replicate model: flux-dev
+2025-10-04 15:59:13,726 - INFO - Trying Replicate model: sdxl-lightning
+2025-10-04 15:59:14,881 - INFO - HTTP Request: POST https://api.replicate.com/v1/models/bytedance/sdxl-lightning-4step/predictions "HTTP/1.1 429 Too Many Requests"
+2025-10-04 15:59:14,883 - WARNING - Replicate sdxl-lightning failed: ReplicateError Details:
+status: 429
+detail: Request was throttled. Your rate limit for creating predictions is reduced to 6 requests per minute with a burst of 1 requests until you add a payment method. Your rate limit resets in ~8s.
+2025-10-04 15:59:15,054 - INFO - HTTP Request: POST https://api.replicate.com/v1/models/black-forest-labs/flux-dev/predictions "HTTP/1.1 429 Too Many Requests"
+2025-10-04 15:59:15,059 - WARNING - Replicate flux-dev failed: ReplicateError Details:
+status: 429
+detail: Request was throttled. Your rate limit for creating predictions is reduced to 6 requests per minute with a burst of 1 requests until you add a payment method. Your rate limit resets in ~8s.
+2025-10-04 15:59:15,696 - INFO - HTTP Request: POST https://api.replicate.com/v1/models/black-forest-labs/flux-schnell/predictions "HTTP/1.1 429 Too Many Requests"
+2025-10-04 15:59:15,699 - WARNING - Replicate flux-schnell failed: ReplicateError Details:
+status: 429
+detail: Request was throttled. Your rate limit for creating predictions is reduced to 6 requests per minute with a burst of 1 requests until you add a payment method. Your rate limit resets in ~8s.
+2025-10-04 15:59:15,699 - INFO - Trying HuggingFace model: stable-diffusion-2.1
+2025-10-04 15:59:15,699 - INFO - Trying HuggingFace model: sd-xl
+2025-10-04 15:59:17,688 - WARNING - HuggingFace stable-diffusion-2.1 HTTP 404: Not Found
+2025-10-04 15:59:28,219 - INFO - HuggingFace sd-xl succeeded
+2025-10-04 15:59:28,221 - INFO - Generation succeeded in 14.5s with huggingface/sd-xl
+2025-10-04 16:13:12,802 - INFO - Replicate API token loaded: r8_Rs5JN8M...
+2025-10-04 16:13:12,802 - INFO - HuggingFace API token loaded: hf_OiQpvpT...
+2025-10-04 16:13:12,842 - INFO - AI Image Generator v2.0 Starting...
+2025-10-04 16:13:12,842 - INFO - Multiple APIs with smart fallback configured
+2025-10-04 16:13:12,843 - INFO - Replicate: OK
+2025-10-04 16:13:12,843 - INFO - HuggingFace: OK
+2025-10-04 16:13:12,843 - INFO - Local fallback: OK
+2025-10-04 16:13:12,843 - INFO - Server: http://0.0.0.0:8000
+2025-10-04 16:13:12,843 - INFO - Test endpoint: http://localhost:8000/test-all
+2025-10-04 16:16:02,365 - INFO - Replicate API token loaded: r8_Rs5JN8M...
+2025-10-04 16:16:02,366 - INFO - HuggingFace API token loaded: hf_OiQpvpT...
+2025-10-04 16:16:02,410 - INFO - AI Image Generator v2.0 Starting...
+2025-10-04 16:16:02,411 - INFO - Multiple APIs with smart fallback configured
+2025-10-04 16:16:02,411 - INFO - Replicate: OK
+2025-10-04 16:16:02,411 - INFO - HuggingFace: OK
+2025-10-04 16:16:02,412 - INFO - Local fallback: OK
+2025-10-04 16:16:02,412 - INFO - Server: http://0.0.0.0:8000
+2025-10-04 16:16:02,412 - INFO - Test endpoint: http://localhost:8000/test-all
+2025-10-04 16:16:30,991 - INFO - === Starting comprehensive API test ===
+2025-10-04 16:16:31,009 - INFO - Testing Replicate API connectivity...
+2025-10-04 16:16:33,080 - INFO - HTTP Request: GET https://api.replicate.com/v1/models "HTTP/1.1 200 OK"
+2025-10-04 16:16:33,294 - INFO - Replicate API: OK - Found 25 models
+2025-10-04 16:16:33,302 - INFO - Testing HuggingFace API connectivity...
+2025-10-04 16:16:35,038 - ERROR - HuggingFace API failed: HTTP 401
+2025-10-04 16:16:35,044 - INFO - Testing Replicate model: flux-schnell
+2025-10-04 16:16:36,827 - INFO - HTTP Request: POST https://api.replicate.com/v1/models/black-forest-labs/flux-schnell/predictions "HTTP/1.1 402 Payment Required"
+2025-10-04 16:16:36,830 - ERROR - Replicate flux-schnell: ERROR - ReplicateError Details:
+title: Insufficient credit
+status: 402
+detail: You have insufficient credit to run this model. Go to https://replicate.com/account/billing#billing to purchase credit. Once you purchase credit, please wait a few minutes before trying again.
+2025-10-04 16:16:36,831 - INFO - Testing Replicate model: flux-dev
+2025-10-04 16:16:38,404 - INFO - HTTP Request: POST https://api.replicate.com/v1/models/black-forest-labs/flux-dev/predictions "HTTP/1.1 429 Too Many Requests"
+2025-10-04 16:16:38,406 - ERROR - Replicate flux-dev: ERROR - ReplicateError Details:
+status: 429
+detail: Request was throttled. Your rate limit for creating predictions is reduced to 6 requests per minute with a burst of 1 requests until you add a payment method. Your rate limit resets in ~9s.
+2025-10-04 16:16:38,408 - INFO - === API test completed ===
+2025-10-04 16:16:38,426 - INFO - Generation request: A serene landscape with mountains and a lake at su...
+2025-10-04 16:16:38,427 - INFO - Trying Replicate model: flux-schnell
+2025-10-04 16:16:38,428 - INFO - Trying Replicate model: flux-dev
+2025-10-04 16:16:38,453 - INFO - Trying Replicate model: sdxl-lightning
+2025-10-04 16:16:41,500 - INFO - HTTP Request: POST https://api.replicate.com/v1/models/black-forest-labs/flux-dev/predictions "HTTP/1.1 429 Too Many Requests"
+2025-10-04 16:16:41,502 - WARNING - Replicate flux-dev failed: ReplicateError Details:
+status: 429
+detail: Request was throttled. Your rate limit for creating predictions is reduced to 6 requests per minute with a burst of 1 requests until you add a payment method. Your rate limit resets in ~6s.
+2025-10-04 16:16:41,505 - INFO - HTTP Request: POST https://api.replicate.com/v1/models/black-forest-labs/flux-schnell/predictions "HTTP/1.1 429 Too Many Requests"
+2025-10-04 16:16:41,516 - WARNING - Replicate flux-schnell failed: ReplicateError Details:
+status: 429
+detail: Request was throttled. Your rate limit for creating predictions is reduced to 6 requests per minute with a burst of 1 requests until you add a payment method. Your rate limit resets in ~6s.
+2025-10-04 16:16:41,523 - INFO - HTTP Request: POST https://api.replicate.com/v1/models/bytedance/sdxl-lightning-4step/predictions "HTTP/1.1 429 Too Many Requests"
+2025-10-04 16:16:41,526 - WARNING - Replicate sdxl-lightning failed: ReplicateError Details:
+status: 429
+detail: Request was throttled. Your rate limit for creating predictions is reduced to 6 requests per minute with a burst of 1 requests until you add a payment method. Your rate limit resets in ~6s.
+2025-10-04 16:16:41,527 - INFO - Trying HuggingFace model: stable-diffusion-2.1
+2025-10-04 16:16:41,617 - INFO - Trying HuggingFace model: sd-xl
+2025-10-04 16:16:42,198 - WARNING - HuggingFace stable-diffusion-2.1 HTTP 404: Not Found
+2025-10-04 16:16:52,955 - INFO - HuggingFace sd-xl succeeded
+2025-10-04 16:16:52,956 - INFO - Generation succeeded in 14.5s with huggingface/sd-xl
