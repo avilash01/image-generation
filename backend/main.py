@@ -16,10 +16,8 @@ from typing import List, Optional
 import json
 import sys
 
-# Load environment variables
 load_dotenv()
 
-# Configure logging for Windows compatibility
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
@@ -32,7 +30,6 @@ logger = logging.getLogger(__name__)
 
 app = FastAPI(title="AI Image Generator", version="2.0.0")
 
-# CORS middleware
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -40,12 +37,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-# API configuration
 REPLICATE_API_TOKEN = os.getenv("REPLICATE_API_TOKEN")
 HUGGINGFACE_API_KEY = os.getenv("HUGGINGFACE_API_KEY")
 
-# Validate API tokens
 if not REPLICATE_API_TOKEN:
     logger.error("REPLICATE_API_TOKEN not found in .env file!")
 else:
@@ -67,7 +61,6 @@ class ImageResponse(BaseModel):
     model_used: str = None
     provider: str = None
 
-# Model configurations
 REPLICATE_MODELS = [
     {
         "name": "flux-schnell",
@@ -203,7 +196,6 @@ async def try_replicate_model(client, model_config, prompt: str) -> Optional[dic
                 lambda: client.run(
                     model_config['model'],
                     input=params
-                    # timeout parameter removed - not supported in replicate client.run()
                 )
             ),
             timeout=model_config['timeout']
@@ -236,12 +228,10 @@ async def test_all_apis():
     
     logger.info("=== Starting comprehensive API test ===")
     
-    # Test Replicate API connectivity
     if REPLICATE_API_TOKEN:
         logger.info("Testing Replicate API connectivity...")
         try:
             client = replicate.Client(api_token=REPLICATE_API_TOKEN)
-            # Test if we can access the models list
             models_list = list(client.models.list())
             replicate_accessible = True
             logger.info(f"Replicate API: OK - Found {len(models_list)} models")
@@ -252,7 +242,6 @@ async def test_all_apis():
         replicate_accessible = False
         logger.warning("Replicate API token not configured")
     
-    # Test HuggingFace API connectivity
     if HUGGINGFACE_API_KEY:
         logger.info("Testing HuggingFace API connectivity...")
         try:
@@ -283,12 +272,9 @@ async def test_all_apis():
                 logger.info(f"Testing Replicate model: {model['name']}")
                 client = replicate.Client(api_token=REPLICATE_API_TOKEN)
                 
-                # Use shorter timeout for testing
                 test_params = model['params'].copy()
                 test_params['prompt'] = test_prompt
-                test_params['steps'] = 2  # Fewer steps for testing
-                
-                # Remove timeout from client.run() in test as well
+                test_params['steps'] = 2  
                 output = await asyncio.wait_for(
                     asyncio.get_event_loop().run_in_executor(
                         None, 
@@ -297,7 +283,7 @@ async def test_all_apis():
                             input=test_params
                         )
                     ),
-                    timeout=30  # Shorter timeout for test
+                    timeout=30 
                 )
                 
                 if output and isinstance(output, list) and len(output) > 0:
@@ -344,9 +330,8 @@ async def test_all_apis():
                 })
                 logger.error(f"Replicate {model['name']}: ERROR - {e}")
     
-    # Test HuggingFace models
     if HUGGINGFACE_API_KEY and huggingface_accessible:
-        for model in HUGGINGFACE_MODELS[:1]:  # Test just one to save time
+        for model in HUGGINGFACE_MODELS[:1]:  
             try:
                 logger.info(f"Testing HuggingFace model: {model['name']}")
                 
@@ -411,7 +396,6 @@ async def test_all_apis():
                 })
                 logger.error(f"HuggingFace {model['name']}: ERROR - {e}")
     
-    # If no specific model tests were run, add API connectivity results
     if not results:
         if REPLICATE_API_TOKEN and not replicate_accessible:
             results.append({
@@ -677,13 +661,10 @@ async def test_all_apis():
     results = []
     
     logger.info("=== Starting comprehensive API test ===")
-    
-    # Test Replicate API connectivity
     if REPLICATE_API_TOKEN:
         logger.info("Testing Replicate API connectivity...")
         try:
             client = replicate.Client(api_token=REPLICATE_API_TOKEN)
-            # Test if we can access the models list
             models_list = list(client.models.list())
             replicate_accessible = True
             logger.info(f"Replicate API: OK - Found {len(models_list)} models")
@@ -694,7 +675,6 @@ async def test_all_apis():
         replicate_accessible = False
         logger.warning("Replicate API token not configured")
     
-    # Test HuggingFace API connectivity
     if HUGGINGFACE_API_KEY:
         logger.info("Testing HuggingFace API connectivity...")
         try:
@@ -717,26 +697,22 @@ async def test_all_apis():
     else:
         huggingface_accessible = False
         logger.warning("HuggingFace API token not configured")
-    
-    # Test individual models only if APIs are accessible
     if REPLICATE_API_TOKEN and replicate_accessible:
-        for model in REPLICATE_MODELS[:2]:  # Test first two models to save time
+        for model in REPLICATE_MODELS[:2]:  
             try:
                 logger.info(f"Testing Replicate model: {model['name']}")
                 client = replicate.Client(api_token=REPLICATE_API_TOKEN)
                 
-                # Use shorter timeout for testing
                 test_params = model['params'].copy()
                 test_params['prompt'] = test_prompt
-                test_params['steps'] = 2  # Fewer steps for testing
-                
+                test_params['steps'] = 2  
                 output = await asyncio.wait_for(
                     asyncio.get_event_loop().run_in_executor(
                         None, 
                         lambda: client.run(
                             model['model'],
                             input=test_params,
-                            timeout=30  # Shorter timeout for test
+                            timeout=30  
                         )
                     ),
                     timeout=40
@@ -786,9 +762,8 @@ async def test_all_apis():
                 })
                 logger.error(f"Replicate {model['name']}: ERROR - {e}")
     
-    # Test HuggingFace models
     if HUGGINGFACE_API_KEY and huggingface_accessible:
-        for model in HUGGINGFACE_MODELS[:1]:  # Test just one to save time
+        for model in HUGGINGFACE_MODELS[:1]:  
             try:
                 logger.info(f"Testing HuggingFace model: {model['name']}")
                 
@@ -800,7 +775,6 @@ async def test_all_apis():
                 data = model['params'].copy()
                 data['inputs'] = test_prompt
                 
-                # First check if model is loaded
                 model_status_url = model['url'].replace('/api/', '/') + '/'
                 status_response = requests.get(model_status_url, timeout=10)
                 
@@ -857,7 +831,6 @@ async def test_all_apis():
                 })
                 logger.error(f"HuggingFace {model['name']}: ERROR - {e}")
     
-    # If no specific model tests were run, add API connectivity results
     if not results:
         if REPLICATE_API_TOKEN and not replicate_accessible:
             results.append({
