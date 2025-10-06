@@ -6,15 +6,14 @@ export class ImageService {
     static async generateImage(prompt, modelName = null, width = 512, height = 512, retryCount = 0) {
         const model = modelName || this.getRandomModel();
         
-        // Validate dimensions
         const validWidth = Math.min(Math.max(width, 64), 1024);
         const validHeight = Math.min(Math.max(height, 64), 1024);
 
         try {
-            console.log(`🖼️ Generating image with model: ${model}`);
-            console.log(`📐 Dimensions: ${validWidth}x${validHeight}`);
-            console.log(`🎨 Prompt: ${prompt}`);
-            console.log(`🔄 Attempt: ${retryCount + 1}/${CONFIG.HF_RETRY_ATTEMPTS}`);
+            console.log(`Generating image with model: ${model}`);
+            console.log(`Dimensions: ${validWidth}x${validHeight}`);
+            console.log(`Prompt: ${prompt}`);
+            console.log(`Attempt: ${retryCount + 1}/${CONFIG.HF_RETRY_ATTEMPTS}`);
 
             const response = await axios.post(
                 `https://api-inference.huggingface.co/models/${model}`,
@@ -41,9 +40,8 @@ export class ImageService {
                 }
             );
 
-            console.log('✅ Image generated successfully');
+            console.log('Image generated successfully');
             
-            // Optimize image with sharp
             const optimizedBuffer = await sharp(response.data)
                 .jpeg({ 
                     quality: 90,
@@ -59,12 +57,11 @@ export class ImageService {
             };
 
         } catch (error) {
-            console.error('❌ Hugging Face API error:', error.response?.status, error.response?.statusText);
+            console.error('Hugging Face API error:', error.response?.status, error.response?.statusText);
             
-            // Handle model loading error with retry
             if (error.response?.status === 503 && retryCount < CONFIG.HF_RETRY_ATTEMPTS - 1) {
-                const waitTime = Math.pow(2, retryCount) * 5000; // Exponential backoff
-                console.log(`⏳ Model is loading, waiting ${waitTime/1000} seconds before retry...`);
+                const waitTime = Math.pow(2, retryCount) * 5000; 
+                console.log(`Model is loading, waiting ${waitTime/1000} seconds before retry...`);
                 
                 await new Promise(resolve => setTimeout(resolve, waitTime));
                 return this.generateImage(prompt, modelName, width, height, retryCount + 1);
@@ -149,7 +146,7 @@ export class ImageService {
         } catch (error) {
             return { 
                 success: false, 
-                error: 'Cannot connect to Hugging Face. Check your API token and internet connection.' 
+                error: 'Cannot connect to Hugging Face' 
             };
         }
     }
