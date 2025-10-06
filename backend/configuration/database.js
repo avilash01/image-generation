@@ -5,7 +5,6 @@ config();
 
 const uri = process.env.MONGODB_URI;
 
-// Create a MongoClient with a MongoClientOptions object
 const client = new MongoClient(uri, {
     serverApi: {
         version: ServerApiVersion.v1,
@@ -23,7 +22,6 @@ export async function connectToDatabase() {
             database = client.db('ai_image_generator');
             console.log('✅ Successfully connected to MongoDB!');
             
-            // Create indexes for better performance
             await database.collection('generations').createIndex({ "timestamp": -1 });
             await database.collection('generations').createIndex({ "prompt": "text" });
         }
