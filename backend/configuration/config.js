@@ -3,7 +3,6 @@ import { config } from 'dotenv';
 config();
 
 export const CONFIG = {
-    // Server
     PORT: process.env.PORT || 3000,
     NODE_ENV: process.env.NODE_ENV || 'development',
     
@@ -11,20 +10,16 @@ export const CONFIG = {
     GEMINI_API_KEY: process.env.GEMINI_API_KEY,
     HF_TOKEN: process.env.HF_TOKEN,
     
-    // Models
     AVAILABLE_MODELS: (process.env.AVAILABLE_MODELS || 'runwayml/stable-diffusion-v1-5').split(','),
     
-    // Image Settings
     DEFAULT_WIDTH: parseInt(process.env.DEFAULT_WIDTH) || 512,
     DEFAULT_HEIGHT: parseInt(process.env.DEFAULT_HEIGHT) || 512,
     MAX_PROMPT_LENGTH: parseInt(process.env.MAX_PROMPT_LENGTH) || 1000,
     RATE_LIMIT_PER_MINUTE: parseInt(process.env.RATE_LIMIT_PER_MINUTE) || 10,
     
-    // API Settings
-    HF_TIMEOUT: 120000, // 2 minutes
+    HF_TIMEOUT: 120000, 
     HF_RETRY_ATTEMPTS: 3,
     
-    // Art Styles
     ART_STYLES: {
         realistic: {
             name: "Photorealistic",
